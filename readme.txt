@@ -1,6 +1,6 @@
 === Theme Check ===
-Contributors: holger1411
-Author URI: https://understrap.com/overstrap/
+Contributors: devbysalas
+Author URI: https://carlosalfaro.dev/
 Requires at Least: 4.7
 Tested Up To: 5.2
 Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
@@ -12,16 +12,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 WordPress child theme for understrap
 == Description ==
 
-OverStrap: Corporate is a business style child theme for UnderStrap. Fast forward your business theme development with this lightweight starter theme.
+DCPAINTING: Is the official WP theme for dcpainting.
 
-== Third Party Assets:==
-*Quote SVG
-https://www.flaticon.com/free-icon/right-quote_157248#term=quote&page=1&position=17
 
-*screenshot:
-https://unsplash.com/photos/kSJTEv9w5l4
-
-== Changelog ==
-= 0.9.4 =
-* initial release
 
