@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: Business Home
+ * Template name: DCPAINTING Home
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -24,7 +24,7 @@ get_header();
 
 
 			<main class="site-main" id="main">
-                <?php 
+                <?php
                 get_template_part( 'homepage-sections/hero');
                 get_template_part( 'homepage-sections/service');
                 get_template_part( 'homepage-sections/stats');
@@ -33,9 +33,9 @@ get_header();
 				get_template_part( 'homepage-sections/testimonial');
 				get_template_part( 'homepage-sections/contact');
                  ?>
-                <?php while ( have_posts() ) : the_post(); 
-                
-                    //the_content(); 
+                <?php while ( have_posts() ) : the_post();
+
+                    //the_content();
                 endwhile; // end of the loop. ?>
 
 			</main><!-- #main -->

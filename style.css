@@ -743,7 +743,7 @@ aside ul li a:hover {
   #main-slider .carousel-item {
       background-size: cover;
       background-position: center;
-      height: 550px;
+      height: 100vh;
   }
   @media (max-width: 500px) {
     #main-slider .carousel-item {
