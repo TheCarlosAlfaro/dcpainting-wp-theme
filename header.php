@@ -30,6 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap-business' ); ?></a>
 
+
 		<nav class="navbar navbar-expand-md navbar-light">
 
 		<?php if ( 'container' == $container ) : ?>

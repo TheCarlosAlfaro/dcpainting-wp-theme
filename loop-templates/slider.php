@@ -40,10 +40,18 @@ if ( true == get_theme_mod( 'slider-toggle', true ) ) : ?>
 
     <div class="carousel-inner" role="listbox">
         <?php $i=0; foreach($slides as $slide) { extract($slide); ?>
-        <div class="carousel-item <?php if($i == 0) { ?>active<?php } ?>" style="background-image:url('<?php echo esc_url($image); ?>');">
+        <div class="carousel-item <?php if($i == 0) { ?>active<?php } ?>" style="background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.0),
+    rgba(0, 0, 0, 0.4)
+  ),url('<?php echo esc_url($image); ?>');">
 
             <div class="carousel-caption">
                 <h3><a href="<?php the_permalink();?>"><?php echo esc_html($title); ?></a></h3>
+            </div>
+            <div class="carousel-cta">
+                <button class="btn btn-primary">Contact Us</button>
+                <button class="btn btn-secondary">Online Store</button>
             </div>
         </div>
         <?php $i++; } ?>
