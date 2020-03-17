@@ -11,9 +11,7 @@ $btnUrlB = get_theme_mod('button-link-2');
 $cf = get_theme_mod('business-form');
 ?>
 
-<?php if ( is_front_page() || is_home() ) : ?>
-            <?php get_template_part( 'loop-templates/slider' ); ?>
-        <?php endif; ?>
+
 <div id="hero" class="w-100" style="background-image: url('<?php echo esc_url( $bg ); ?>')">
 
     <div class="container">

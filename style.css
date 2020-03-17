@@ -762,11 +762,11 @@ aside ul li a:hover {
 #main-slider .carousel-item {
   background-size: cover;
   background-position: center;
-  height: 95vh;
+  height: 88vh;
 }
 @media (max-width: 500px) {
   #main-slider .carousel-item {
-    height: 450px;
+    height: 88vh;
   }
   #main-slider .carousel-item .carousel-caption h3 {
     font-size: 20px;
@@ -806,62 +806,4 @@ aside ul li a:hover {
 
 .entry-content .alignfull img {
   width: 100vw;
-}
-
-/* DC CUSTOM STYLES */
-.cta-link {
-  border: 2px solid #fefefe;
-  border-radius: 10px;
-  margin-left: 1rem;
-}
-
-.carousel-caption {
-  position: absolute;
-  bottom: 45% !important;
-  z-index: 0 !important;
-}
-
-#main-slider .carousel-item .carousel-caption h3 a {
-  text-transform: uppercase;
-  font-size: 3rem;
-}
-
-#main-slider .carousel-item .carousel-caption {
-  background: transparent !important;
-  padding: 20px;
-}
-
-.carousel-cta {
-  position: absolute;
-  right: 15%;
-  bottom: 35%;
-  left: 15%;
-  z-index: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-}
-
-.btn-primary {
-  background: #fefefe !important;
-  color: #171a20 !important;
-  border-color: #fefefe !important;
-  border-radius: 10px !important;
-  font-weight: bold !important;
-  text-transform: uppercase;
-  line-height: 22px;
-  padding: 10px 30px !important;
-}
-
-.btn-secondary {
-  background: transparent !important;
-  color: #fefefe !important;
-  border-color: #fefefe !important;
-  border-width: 2px !important;
-  border-radius: 10px !important;
-  font-weight: bold !important;
-  text-transform: uppercase;
-  line-height: 22px;
-  padding: 10px 30px !important;
 }

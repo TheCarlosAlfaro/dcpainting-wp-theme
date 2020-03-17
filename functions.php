@@ -45,23 +45,23 @@ function understrap_portfolio_scripts() {
 	wp_enqueue_script('countdowntimer',get_stylesheet_directory_uri() . '/Assets/js/countdown.min.js', array('jquery'));
 	wp_enqueue_script('timer',get_stylesheet_directory_uri() . '/Assets/js/timer.js', array('jquery'));
 	//wp_enqueue_script('portfolio',get_stylesheet_directory_uri() . '/Assets/js/portfolio.js', array( 'jquery' ));
-	
+
 	$ed_banner_event_timer = get_theme_mod( 'event-date', true );
 	$banner_event_timer    = new DateTime( get_theme_mod( 'event-date', '2020-08-20' ) );
 	$today                 = new DateTime( date('Y-m-d') );
 	$banner_timer          = '';
-	
+
 	if( $banner_event_timer > $today ){
-		$banner_timer = get_theme_mod( 'event-date', '2020-08-20' );        
+		$banner_timer = get_theme_mod( 'event-date', '2020-08-20' );
 	}
-	
-	
-	$array = array( 
+
+
+	$array = array(
 		'rtl'                => is_rtl(),
 		'singular'           => is_singular(),
 		'banner_event_timer' => $banner_timer,
 	);
-	
+
 	wp_localize_script( 'timer', 'the_conference_data', $array );
 }
 

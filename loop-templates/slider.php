@@ -18,6 +18,7 @@ if ( $slider_query->have_posts() ) {
             $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
             $thumb_url = $thumb_url_array[0];
             $temp['title'] = get_the_title();
+            $temp['url'] = get_field('url');
             $temp['excerpt'] = get_the_excerpt();
             $temp['image'] = $thumb_url;
             $slides[] = $temp;
@@ -47,11 +48,7 @@ if ( true == get_theme_mod( 'slider-toggle', true ) ) : ?>
   ),url('<?php echo esc_url($image); ?>');">
 
             <div class="carousel-caption">
-                <h3><a href="<?php the_permalink();?>"><?php echo esc_html($title); ?></a></h3>
-            </div>
-            <div class="carousel-cta">
-                <button class="btn btn-primary">Contact Us</button>
-                <button class="btn btn-secondary">Online Store</button>
+                <h3><a href="<?php echo esc_html($url);?>" target="_blank"><?php echo esc_html($title); ?></a></h3>
             </div>
         </div>
         <?php $i++; } ?>
